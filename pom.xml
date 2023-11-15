@@ -32,12 +32,12 @@
                 <configuration>
                     <excludes>
                         <!--                        wykluczenie konkretnej klasy-->
-                        <!--                        <exclude>pl/kurs/b/Bca.class</exclude>-->
+<!--                                                <exclude>pl/kurs/a/Abc.class</exclude>-->
                         <!--                        wykluczenie paczki-->
-                        <!--                        <exclude>**/paczka/*</exclude>-->
+<!--                                                <exclude>**/a/*</exclude>-->
 
                         <!--                    wyklucza wszystkie ktore maja literke a    -->
-                        <!--                        <exclude>pl/kurs/**/*a*.*</exclude>-->
+<!--                                                <exclude>pl/kurs/**/*a*.*</exclude>-->
                     </excludes>
 
                 </configuration>
@@ -54,9 +54,9 @@
                             <goal>report</goal>
                         </goals>
                         <!--                        &lt;!&mvn verifyndash; konfiguracja zeby w innym katalogu sie generowalo&ndash;&gt;-->
-<!--                        <configuration>-->
-<!--                            <outputDirectory>target/jacoco-report</outputDirectory>-->
-<!--                        </configuration>-->
+                        <configuration>
+                            <outputDirectory>target/jacoco-report</outputDirectory>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>jacoco-check</id>
