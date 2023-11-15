@@ -7,6 +7,7 @@ public class Strings {
     // 2 -> "Second string is longer"
     // 3 -> "Strings are equal and longer than 5"
     // 4 -> "Strings are equal"
+
     public String compareStrings(String str1, String str2) {
         if (str1.length() > str2.length()) {
             return "First string is longer";

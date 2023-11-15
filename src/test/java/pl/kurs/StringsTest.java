@@ -13,7 +13,20 @@ public class StringsTest {
         assertEquals("First string is longer", strings.compareStrings("abc", "ab"));
     }
 
-    // dopiszcie testy do pozostalych opcji
+    @Test
+    public void shouldReturnSecondStringIsLonger() {
+        assertEquals("Second string is longer",strings.compareStrings("ab","abcd"));
+    }
+
+    @Test
+    public void shouldReturnThatStringsAreEqualAndLongerThan5() {
+        assertEquals("Strings are equal and longer than 5",strings.compareStrings("abcdef","abcdef"));
+    }
+
+    @Test
+    public void shouldReturnThatStringsAreEqual() {
+        assertEquals("Strings are equal",strings.compareStrings("abc","abc"));
+    }
 
     // dodajcie wiecej metod do poprzedniego zadania i testy wyjtkow z uzyciem assertJ
 
